@@ -8,6 +8,6 @@ El proyecto está compuesto por los siguientes archivos:
 main.html: Contiene la estructura HTML de la landing page. <br>
 main.css: Contiene los estilos CSS para la presentación visual de la landing page.
 
-Además, se incluyeron **Google Fonts** para personalizar la fuente y **material icons** para incorporar íconos como flechas y logos de redes sociales populares. 
+Además, se incluyeron **Google Fonts** para personalizar la fuente y **Material Icons** para incorporar íconos como flechas y logos de redes sociales populares. 
 
 <figure><img src="mock/landing-page.png" alt="logo" style="height: 400px;"></figure>
