@@ -10,4 +10,4 @@ main.css: Contiene los estilos CSS para la presentación visual de la landing pa
 
 Además, se incluyeron **Google Fonts** para personalizar la fuente y **material icons** para incorporar íconos como flechas y logos de redes sociales populares. 
 
-(mock/landing-page.png)
+<figure><img src="mock/landing-page.png" alt="logo" style="height: 400px;"></figure>
