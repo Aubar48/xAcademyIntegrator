@@ -1,0 +1,203 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #e4eef8;
+}
+.wrapper {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #343f44;
+  font-size: 25px;
+}
+.logo i {
+  font-size: 35px;
+  color: #2e86fd;
+}
+.menu {
+  flex-grow: 2;
+  color: #343f44;
+  margin-left: 80px;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.menu ul li {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.outline-button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #2e86fd;
+  color: #2e86fd;
+  font-weight: bold;
+  border-radius: 5%;
+}
+.presentation {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pre-title {
+  color: #6f7880;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.presentation h1 {
+  color: #343f44;
+  font-size: 60px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #2e86fd; /* Efecto de cursor */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+/* Animación de escritura */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* Animación de parpadeo del cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #2e86fd;
+  }
+}
+.post-title {
+  color: #6f7880;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+.subscribe-form input {
+  width: 50%;
+  height: 40px;
+  border: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5%;
+  color: #a3a3a5;
+}
+.subscribe-form button {
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: #fa593c;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5%;
+}
+.secondary-p {
+  color: #a3a3a5;
+  font-size: 12px;
+  font-weight: 600;
+}
+.features {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-between;
+}
+.feature {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  width: 400px;
+}
+.feature h4 {
+  margin: 0;
+  font-size: 20px;
+}
+.feature p {
+  font-size: 16px;
+}
+.feature i {
+  font-size: 50px;
+  color: #2e86fd;
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    padding: 0px;
+  }
+  .menu {
+    margin-left: 1px;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .presentation h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 35%;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .feature {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .wrapper {
+    width: 100%;
+  }
+  .presentation h1 {
+    font-size: 40px;
+  }
+  .features {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 125px;
+  }
+  .feature {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
