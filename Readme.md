@@ -1,14 +1,14 @@
 # Landing Page para xAcademy y Santex
 
-Este proyecto consiste en una landing page creada con HTML y CSS, siguiendo los conocimientos adquiridos en el curso. La landing page tiene como objetivo presentar los servicios de una entidad ficticia.
+Este proyecto consiste en una landing page creada con HTML y CSS, siguiendo los conocimientos adquiridos en el curso y con Docker y Nginx levantamos el servidor. La landing page tiene como objetivo presentar los servicios de una entidad ficticia.
 
 ## Tecnologías
-Estructura del Proyecto
+Estructura del Proyecto <br>
 El proyecto está compuesto por los siguientes archivos:
 
 - `main.html`: Contiene la estructura HTML de la landing page.
 - `main.css`: Contiene los estilos CSS para la presentación visual de la landing page.
-- `Dockerfile`: Contiene la configuracion para levantar el servidor con docker y nginx en el puerto 80.
+- `Dockerfile`: Contiene la configuracion para levantar el servidor con **Docker** y **Nginx** en el puerto 80.
 
 Además, se incluyeron **Google Fonts** para personalizar la fuente y **Material Icons** para incorporar íconos como flechas y logos de redes sociales populares.
 
