@@ -29,7 +29,7 @@ Sigue estos pasos para levantar el contenedor Docker con tu configuración:
 
 3. **Ejecuta el contenedor**: Una vez que la imagen se haya construido correctamente, puedes ejecutar el contenedor con el siguiente comando:
 
-   - docker run -d -p 80:80 mi-sitio-web
+   - docker run -d -p 80:80 --name xAcademyIntegrador mi-sitio-web
 
 Este comando inicia el contenedor en modo desacoplado (-d) y mapea el puerto 80 del host al puerto 80 del contenedor.
 
