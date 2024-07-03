@@ -1,4 +1,8 @@
-# Landing Page para xAcademy y Santex
+# Santex Academy
+
+XAcademy es un programa de formación en programación nativo llevado adelante por la Fundación Tecnología con Propósito junto a Santex que busca promover un cambio positivo en la comunidad a través de la educación en IT, apuntando a lograr la inserción laboral de personas en el mundo tecnológico.
+
+# Landing Page para xAcademy Santex 
 
 Este proyecto consiste en una landing page creada con HTML y CSS, siguiendo los conocimientos adquiridos en el curso y con Docker y Nginx levantamos el servidor.<br>La landing page tiene como objetivo presentar los servicios de una entidad ficticia.
 
