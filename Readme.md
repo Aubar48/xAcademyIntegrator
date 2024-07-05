@@ -10,8 +10,8 @@ Este proyecto consiste en una landing page creada con HTML y CSS, siguiendo los 
 Estructura del Proyecto <br>
 El proyecto está compuesto por los siguientes archivos:
 
-- `main.html`: Contiene la estructura HTML de la landing page.
-- `main.css`: Contiene los estilos CSS para la presentación visual de la landing 
+- `index.html`: Contiene la estructura HTML de la landing page.
+- `styles.css`: Contiene los estilos CSS para la presentación visual de la landing 
 page.
 - `script.js`: Contiene los eventos del SCRIPT del HTML de la landing page.
 - `images`: Carpeta que contiene los iconos del favicon del HTML de la landing page.
