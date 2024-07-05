@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xAcademy</title>
-    <link rel="stylesheet" href="/index.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -21,7 +21,7 @@
     <div class="wrapper">
         <header>
             <div class="logo">
-                <i class="material-icons">apps</i>Shades
+                <i class="material-icons">health_and_safety</i>Shades
             </div>
             <nav class="menu">
                 <ul>
@@ -30,10 +30,29 @@
                     <li>Services</li>
                     <li>Pricing</li>
                     <li>Contact</li>
+                    <label class="switch">
+                        <input type="checkbox" id="modo">
+                        <span class="slider"></span>
+                    </label>
                 </ul>
             </nav>
             <button type="button" class="outline-button">Get started</button>
+            <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
         </header>
+        <nav class="mobile-menu">
+            <ul>
+                <li>Free Landing Pages</li>
+                <li>Features</li>
+                <li>Services</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+                <label class="switch">
+                    <input type="checkbox" id="modo">
+                    <span class="slider"></span>
+                </label>
+            </ul>
+        </nav>
+        
         <main>
             <section class="presentation">
                 <span class="pre-title">Present your service</span>
@@ -46,6 +65,11 @@
                     <button class="subscribe-button" type="submit">Subscribe</button>
                 </form>
                 <p class="secondary-p">Trusted by over 50,000 and more customers</p>
+            </section>
+            <section class="img-tec">
+                <img class="img-tec-1" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/technology-with-purpose.svg"
+                    alt="technology-withPurpose">
+                <img class="img-tec-2" src="https://technologywithpurpose.org/wp-content/uploads/2023/02/xacademy-white.svg" alt="xAcademy">
             </section>
             <section class="features">
                 <div class="feature">
@@ -71,7 +95,13 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <p id="datetime"></p>
+            <p>Todos los derechos reservados &copy; Nahuel Argandoña</p>
+        </footer>
+
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

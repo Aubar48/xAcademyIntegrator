@@ -11,7 +11,10 @@ RUN apt-get install nginx -y
 COPY index.html /var/www/html/index.html
 
 # Se copia el archivo CSS personalizado
-COPY index.css /var/www/html/index.css
+COPY styles.css /var/www/html/styles.css
+
+# Se copia el archivo CSS personalizado
+COPY script.js /var/www/html/script.css
 
 # Se expone el puerto 80
 EXPOSE 80

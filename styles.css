@@ -1,61 +1,103 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #e4eef8;
+  background-color: #bddbf8;
+  box-sizing: border-box;
 }
+
+body.noche {
+  background-color: #2e2e2e;
+  color: #f5f5f5;
+}
+
 .wrapper {
   width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
+
 .logo {
   display: flex;
   align-items: center;
   color: #343f44;
   font-size: 25px;
 }
+
+body.noche .logo {
+  color: #f5f5f5;
+}
+
 .logo i {
   font-size: 35px;
   color: #2e86fd;
 }
+
+body.noche .logo i {
+  color: #fa593c;
+}
+
 .menu {
   flex-grow: 2;
   color: #343f44;
-  margin-left: 80px;
+  margin-left: 70px;
 }
+
+body.noche .menu {
+  color: #f5f5f5;
+}
+
 .menu ul {
   list-style-type: none;
   display: flex;
   align-items: center;
 }
+
 .menu ul li {
   margin-right: 30px;
   font-weight: 600;
   text-transform: capitalize;
 }
+
+body.noche .menu ul li {
+  color: #f5f5f5;
+}
+
 .outline-button {
   padding: 10px 15px;
   background-color: transparent;
   border: 2px solid #2e86fd;
   color: #2e86fd;
   font-weight: bold;
-  border-radius: 5%;
+  
 }
+
+body.noche .outline-button {
+  border-color: #fa593c;
+  color: #fa593c;
+}
+
 .presentation {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .pre-title {
   color: #6f7880;
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 700;
+}
+
+body.noche .pre-title {
+  color: #cccccc;
 }
 
 .presentation h1 {
@@ -68,6 +110,7 @@ header {
   border-right: 0.15em solid #2e86fd; /* Efecto de cursor */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
+
 /* Animación de escritura */
 @keyframes typing {
   from {
@@ -77,7 +120,6 @@ header {
     width: 50%;
   }
 }
-
 /* Animación de parpadeo del cursor */
 @keyframes blink-caret {
   from,
@@ -85,9 +127,16 @@ header {
     border-color: transparent;
   }
   50% {
-    border-color: #2e86fd;
+    border-color: #fa593c;
   }
 }
+
+
+body.noche .presentation h1 {
+  color: #f5f5f5;
+  border-right-color: #fa593c; /* Efecto de cursor */
+}
+
 .post-title {
   color: #6f7880;
   font-size: 20px;
@@ -96,6 +145,11 @@ header {
   margin-bottom: 30px;
   display: block;
 }
+
+body.noche .post-title {
+  color: #cccccc;
+}
+
 .subscribe-form input {
   width: 50%;
   height: 40px;
@@ -104,45 +158,188 @@ header {
   padding-left: 30px;
   font-size: 16px;
   font-weight: 700;
-  border-radius: 5%;
   color: #a3a3a5;
 }
+
+
+
 .subscribe-form button {
   width: 30%;
-  height: 40px;
+  height: 42px;
   border: none;
   background-color: #fa593c;
   color: white;
   font-size: 15px;
   font-weight: 700;
-  border-radius: 5%;
+ 
 }
+
+body.noche .subscribe-form button {
+  background-color: #2e86fd;
+}
+
 .secondary-p {
   color: #a3a3a5;
   font-size: 12px;
   font-weight: 600;
 }
+
+body.noche .secondary-p {
+  color: #cccccc;
+}
+
 .features {
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
   justify-content: space-between;
 }
+
 .feature {
   display: flex;
   align-items: start;
   gap: 20px;
   width: 400px;
 }
+
 .feature h4 {
   margin: 0;
   font-size: 20px;
 }
+
+body.noche .feature h4 {
+  color: #f5f5f5;
+}
+
 .feature p {
   font-size: 16px;
 }
+
+body.noche .feature p {
+  color: #cccccc;
+}
+
 .feature i {
   font-size: 50px;
   color: #2e86fd;
+}
+
+body.noche .feature i {
+  color: #fa593c;
+}
+
+/* Estilos específicos para el menú hamburguesa y menú móvil */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #343f44;
+  cursor: pointer;
+}
+
+body.noche .hamburger-menu {
+  color: #f5f5f5;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  backgrcolor: #bddbf8;
+  padding: 10px;
+}
+
+
+.mobile-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+body.noche .mobile-menu ul li {
+  color: #f5f5f5;
+}
+
+.img-tec {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.img-tec-2 {
+  filter: drop-shadow(20px 7px 5px #4E4061);
+}
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin-top: 100px;
+}
+
+body.noche footer {
+  color: #f5f5f5;
+}
+
+footer p {
+  margin: 0 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Estilos para el interruptor */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e86fd;
+  border-radius: 24px;
+  transition: background-color 0.4s ease;
+}
+
+slider::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.4s ease;
+}
+
+input:checked + .slider {
+  background-color: #4E4061;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 10px #4E4061;
+}
+
+input:checked + .slider::before {
+  transform: translateX(8px);
 }
 
 /* Para pantallas pequeñas (móviles) */
@@ -152,24 +349,34 @@ header {
     padding: 0px;
   }
   .menu {
-    margin-left: 1px;
+    
+    display: none; /* Ocultar el menú original */
   }
-  .menu ul {
-    flex-direction: column;
-    align-items: flex-start;
+  .hamburger-menu {
+    display: block;
   }
-  .menu ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
+  .mobile-menu {
+    display: none; /* Ocultar por defecto */
   }
+  .pre-title{
+    font-size: 35px;
+  }
+ 
   .presentation h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .post-title{
+    font-size: 18px;
   }
   .subscribe-form input,
   .subscribe-form button {
     width: 35%;
+  }
+  .img-tec img {
+    width: 120px;
+    height: auto;
   }
 
   .features {
@@ -188,6 +395,12 @@ header {
   .wrapper {
     width: 100%;
   }
+  .menu {
+    display: none; /* Ocultar el menú original */
+    }
+    .hamburger-menu {
+      display: block;
+      }
   .presentation h1 {
     font-size: 40px;
   }
