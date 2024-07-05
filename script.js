@@ -1,29 +1,30 @@
+// Función para el menú hamburguesa
 function toggleMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
 }
 
+// Función para actualizar la fecha y hora
 function updateDateTime() {
     const datetimeElement = document.getElementById('datetime');
     const now = new Date();
     const date = now.toLocaleDateString();
     const time = now.toLocaleTimeString();
     datetimeElement.textContent = `${date} ${time}`;
-}
 
-// Actualizar la fecha y la hora cada segundo
-setInterval(updateDateTime, 1000);
+    // Programar la próxima actualización
+    requestAnimationFrame(updateDateTime);
+}
 
 // Llamar a la función inmediatamente para inicializar el valor
 updateDateTime();
 
 
-// Obtener el estado del modo del almacenamiento local o configurar el modo claro por defecto
+// Función para cambiar el modo claro/oscuro
 document.addEventListener('DOMContentLoaded', function() {
     const body = document.querySelector("body");
-    const switches = document.querySelectorAll("#modo");
+    const switches = document.querySelectorAll(".switch input[type='checkbox']");
 
-    // Sincronizar el estado del modo en todos los interruptores
     switches.forEach(switchElement => {
         switchElement.checked = localStorage.getItem('modo') === 'noche';
         switchElement.addEventListener("change", cambiarModo);
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             body.classList.remove("noche");
             localStorage.setItem('modo', 'dia');
         }
-        // Sincronizar el estado del interruptor en todos los elementos
+
         switches.forEach(switchElement => {
             switchElement.checked = localStorage.getItem('modo') === 'noche';
         });
@@ -52,15 +53,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-// Cambiar el título de la página si es "Home"
-let alertShow = false;
-
-if (document.title === "Home") {
-    setInterval(() => {
-        document.title = alertShow ? "Home" : "xAcademy";
-        alertShow = !alertShow;
-    }, 1000);
+// Función para cambiar el título de la página si es "Home"
+function changeTitleIfHome() {
+    if (document.title === "Home") {
+        let alertShow = false;
+        setInterval(() => {
+            document.title = alertShow ? "Home" : "xAcademy";
+            alertShow = !alertShow;
+        }, 1000);
+    }
 }
 
+// Llamar a la función inmediatamente cuando se carga el DOM
+document.addEventListener('DOMContentLoaded', changeTitleIfHome);
 
