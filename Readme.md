@@ -22,7 +22,7 @@ Además, se incluyeron **Google Fonts** para personalizar la fuente y **Material
 
 Sigue estos pasos para levantar el contenedor Docker con tu configuración:
 
-1. **Organiza tus archivos**: Asegúrate de tener los siguientes archivos en el mismo directorio:
+1. **Organiza tus archivos**: Asegúrate de tener los siguientes archivos en el mismo directorio y tener docker desktop abierto:
    - `Dockerfile`
    - `intex.html`
    - `index.css`

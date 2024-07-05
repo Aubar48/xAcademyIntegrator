@@ -14,7 +14,7 @@ COPY index.html /var/www/html/index.html
 COPY styles.css /var/www/html/styles.css
 
 # Se copia el archivo CSS personalizado
-COPY script.js /var/www/html/script.css
+COPY script.js /var/www/html/script.js
 
 # Se expone el puerto 80
 EXPOSE 80
