@@ -74,7 +74,7 @@ body.noche .menu ul li {
   border: 2px solid #2e86fd;
   color: #2e86fd;
   font-weight: bold;
-  
+  cursor: pointer;
 }
 
 body.noche .outline-button {
@@ -171,7 +171,7 @@ body.noche .post-title {
   color: white;
   font-size: 15px;
   font-weight: 700;
- 
+  cursor: pointer;
 }
 
 body.noche .subscribe-form button {
@@ -192,6 +192,7 @@ body.noche .secondary-p {
   display: flex;
   margin-top: 100px;
   justify-content: space-between;
+  
 }
 
 .feature {
@@ -199,6 +200,29 @@ body.noche .secondary-p {
   align-items: start;
   gap: 20px;
   width: 400px;
+  border-radius: 0px 40px 40px 40px;
+  background-color: #a5c8ee;
+  
+}
+
+body.noche .feature{
+  background-color: #333333;
+}
+.feature-button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #2e86fd;
+  color: #2e86fd;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+body.noche .feature-button {
+  border-color: #fa593c;
+  color: #fa593c;
+  
 }
 
 .feature h4 {
@@ -279,7 +303,7 @@ footer {
   color: black;
   text-align: center;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 body.noche footer {
@@ -331,7 +355,7 @@ slider::before {
 }
 
 input:checked + .slider {
-  background-color: #4E4061;
+  background-color: #fa593c;
 }
 
 input:focus + .slider {
@@ -387,6 +411,7 @@ input:checked + .slider::before {
   .feature {
     width: 100%;
     margin-bottom: 20px;
+    
   }
 }
 
@@ -408,6 +433,7 @@ input:checked + .slider::before {
     flex-direction: row;
     align-items: center;
     margin-top: 125px;
+    gap: 20px;
   }
   .feature {
     width: 100%;
