@@ -187,7 +187,7 @@ body.noche .subscribe-form button {
 body.noche .secondary-p {
   color: #cccccc;
 }
-
+/* Cards features */
 .features {
   display: flex;
   margin-top: 100px;
@@ -297,7 +297,7 @@ body.noche .mobile-menu ul li {
   gap: 40px;
   margin-top: 50px;
 }
-
+/* Sombreado de imagen*/
 .img-tec-2 {
   filter: drop-shadow(20px 7px 5px #4E4061);
 }
